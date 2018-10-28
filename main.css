@@ -5,6 +5,21 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* ANCHORS */
+
+.portfolio, 
+.about,
+.contact-me {
+  position: relative;
+}
+
+#portfolio-anchor,
+#about-anchor, 
+#contact-me-anchor {
+  position: absolute;
+  top: -103px;
+}
+
 /* PAGE NAVIGATION */
 
 .page-nav {
@@ -24,7 +39,8 @@ body {
 .page-nav__title {
   display: inline-block;
   margin:0;
-  width: calc(100% - 320px);
+  /* width: calc(100% - 320px); */
+  width: 30%;
   font-size: 1.8rem;
   text-transform: uppercase;
   vertical-align: middle;
@@ -32,6 +48,8 @@ body {
 
 .page-nav__menu-list {
   display: inline-block;
+  text-align: right;
+  width: 69%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -94,7 +112,7 @@ body {
    font-size: 1.6rem;
  }
 
- /* PORTFOLIO */
+ /* section PORTFOLIO */
 
  .portfolio {
    padding: 80px 40px;
@@ -306,8 +324,7 @@ body {
 .contact-me__form .wrapper {
   display: block;
   max-width: 70%;
-  margin: 0 auto;
-  
+  margin: 0 auto;  
 }
 
 .contact-me__form input[type='button'] {
